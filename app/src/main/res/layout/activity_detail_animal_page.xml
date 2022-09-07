@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_shelter"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view6"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_shelter">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/animal_name_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Animal Name" />
+
+                <TextView
+                    android:id="@+id/description_animal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/animal_name_detail"
+                    tools:text="Desc" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view6">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginEnd="16dp"
+                        android:text="Personality:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/personality"
+                        android:textColor="@color/black"
+                        tools:text="Animal Stat" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginEnd="16dp"
+                        android:text="Energy Level:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/energy_level"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        tools:text="Animal Stat" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginEnd="16dp"
+                        android:text="Good with Children:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/good_with_children"
+                        android:textColor="@color/black"
+                        tools:text="Animal Stat" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginEnd="16dp"
+                        android:text="Good with other animal:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/good_with_other_dog"
+                        android:textColor="@color/black"
+                        tools:text="Animal Stat" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginEnd="16dp"
+                        android:text="Shedding:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/shedding"
+                        android:textColor="@color/black"
+                        tools:text="Animal Stat" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginEnd="16dp"
+                        android:text="Grooming:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/grooming_detail_shelter"
+                        android:textColor="@color/black"
+                        tools:text="Animal Stat" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginEnd="16dp"
+                        android:text="Trainability:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/trainability"
+                        android:textColor="@color/black"
+                        tools:text="Animal Stat" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginEnd="16dp"
+                        android:text="Height:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/height"
+                        android:textColor="@color/black"
+                        tools:text="Animal Stat" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginEnd="16dp"
+                        android:text="Weight:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/weight"
+                        android:textColor="@color/black"
+                        tools:text="Animal Stat" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginEnd="16dp"
+                        android:text="Life Expectancy:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/life_expectancy"
+                        android:textColor="@color/black"
+                        tools:text="Animal Stat" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginEnd="16dp"
+                        android:text="Barking Level:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/barking_level"
+                        android:textColor="@color/black"
+                        tools:text="Animal Stat" />
+                </TableRow>
+            </TableLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_adopt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onAdopt"
+            android:layout_margin="16dp"
+            android:text="Adopt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

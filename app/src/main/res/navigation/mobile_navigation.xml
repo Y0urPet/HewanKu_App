@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.binus.hewanku.MainMenu.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_clinic"
+        android:name="com.binus.hewanku.MainMenu.ClinicFragment"
+        android:label="Clinic"
+        tools:layout="@layout/fragment_clinic" />
+
+    <fragment
+        android:id="@+id/navigation_shelter"
+        android:name="com.binus.hewanku.MainMenu.ShelterFragment"
+        android:label="Shelter"
+        tools:layout="@layout/fragment_shelter" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.binus.hewanku.MainMenu.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"/>
+
+</navigation>
